@@ -1,0 +1,23 @@
+{
+  "name": "react-native-silver-example",
+  "displayName": "Silver Example",
+  "expo": {
+    "name": "react-native-silver-example",
+    "slug": "react-native-silver-example",
+    "description": "Example app for react-native-silver",
+    "privacy": "public",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "jsEngine": "hermes",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
