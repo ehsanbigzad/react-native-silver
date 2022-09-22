@@ -1920,7 +1920,7 @@
 
 "@types/prop-types@*":
   version "15.7.5"
-  resolved "http://localhost:4873/@types%2fprop-types/-/prop-types-15.7.5.tgz"
+  resolved "https://registry.npmjs.org/@types%2fprop-types/-/prop-types-15.7.5.tgz"
   integrity sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==
 
 "@types/q@^1.5.1":
@@ -1930,7 +1930,7 @@
 
 "@types/react@~17.0.21":
   version "17.0.50"
-  resolved "http://localhost:4873/@types%2freact/-/react-17.0.50.tgz"
+  resolved "https://registry.npmjs.org/@types%2freact/-/react-17.0.50.tgz"
   integrity sha512-ZCBHzpDb5skMnc1zFXAXnL3l1FAdi+xZvwxK+PkglMmBrwjpp9nKaWuEvrGnSifCJmBFGxZOOFuwC6KH/s0NuA==
   dependencies:
     "@types/prop-types" "*"
@@ -1951,7 +1951,7 @@
 
 "@types/scheduler@*":
   version "0.16.2"
-  resolved "http://localhost:4873/@types%2fscheduler/-/scheduler-0.16.2.tgz"
+  resolved "https://registry.npmjs.org/@types%2fscheduler/-/scheduler-0.16.2.tgz"
   integrity sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
 
 "@types/source-list-map@*":
@@ -4036,7 +4036,7 @@ csso@^4.0.2:
 
 csstype@^3.0.2:
   version "3.1.1"
-  resolved "http://localhost:4873/csstype/-/csstype-3.1.1.tgz"
+  resolved "https://registry.npmjs.org/csstype/-/csstype-3.1.1.tgz"
   integrity sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==
 
 cyclist@^1.0.1:
