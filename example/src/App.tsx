@@ -1,18 +1,25 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { View, Text } from 'react-native';
+import createStyle from 'react-native-silver';
 
 export default function App() {
+  const { styles } = useStyles();
+
   return (
     <View style={styles.container}>
-      <Text>Hello world</Text>
+      <Text style={styles.text}>Reactive style</Text>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
+const useStyles = createStyle(({ isDark }) => ({
   container: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: isDark ? '#000000' : '#ffffff',
   },
-});
+  text: {
+    color: isDark ? '#ffffff' : '#000000',
+  },
+}));
