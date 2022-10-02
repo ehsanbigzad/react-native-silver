@@ -1,15 +1,38 @@
-# React Native Silver
+<p align="center">
+  <a href="https://nextjs.org">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://iili.io/LNR46l.md.png">
+      <img src="https://iili.io/LNR46l.md.png" height="128">
+    </picture>
+    <h1 align="center">React Native Silver</h1>
+    <h4 align="center">Reactive styling (light & dark mode) for React Native applications 🎨📱</h4>
+  </a>
+</p>
 
-![npm](https://img.shields.io/npm/v/react-native-silver?color=CC3534&style=flat-square)
-![npm](https://img.shields.io/npm/dw/react-native-silver?style=flat-square)
-![GitHub Repo stars](https://img.shields.io/github/stars/ehsanbigzad/react-native-silver?style=flat-square)
-![CircleCI](https://img.shields.io/circleci/build/github/ehsanbigzad/react-native-silver?style=flat-square&token=305ece18a287e361001a422265f8755c74c8ab13)
-![Discord](https://img.shields.io/discord/1022436158438912102?color=%237289da&style=flat-square)
-![GitHub](https://img.shields.io/github/license/ehsanbigzad/react-native-silver?style=flat-square)
+<br>
 
-Reactive styling for React Native applications
+<div align="center">
+  <a href="https://www.npmjs.com/package/react-native-silver">
+    <img alt="npm" src="https://img.shields.io/npm/v/react-native-silver?color=CC3534&style=flat-square"/>
+  </a>
+  <a href="https://www.npmjs.com/package/react-native-silver">
+    <img alt="npm downloads" src="https://img.shields.io/npm/dw/react-native-silver?style=flat-square"/>
+  </a>
+  <a href="https://github.com/ehsanbigzad/react-native-silver">
+    <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/ehsanbigzad/react-native-silver?style=flat-square"/>
+  </a>
+  <a href="https://app.circleci.com/pipelines/github/ehsanbigzad/react-native-silver">
+    <img alt="CircleCI" src="https://img.shields.io/circleci/build/github/ehsanbigzad/react-native-silver?style=flat-square&token=305ece18a287e361001a422265f8755c74c8ab13"/>
+  </a>
+  <a href="https://discord.gg/GnzdDSkP">
+    <img alt="Discord" src="https://img.shields.io/discord/1022436158438912102?color=%237289da&style=flat-square"/>
+  </a>
+  <a href="#">
+    <img alt="MIT" src="https://img.shields.io/github/license/ehsanbigzad/react-native-silver?style=flat-square"/>
+  </a>
+</div>
 
-> Under development
+<br>
 
 ## Installation
 
