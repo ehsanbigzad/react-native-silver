@@ -9,7 +9,7 @@
 
 Reactive styling for React Native applications
 
-> Under development, use on your own risk.
+> Under development
 
 ## Installation
 
@@ -19,12 +19,14 @@ npm install react-native-silver
 
 ## Usage
 
-```ts
-import React from 'react';
-import { View, Text } from 'react-native';
-import createStyle from 'react-native-silver';
+Import `createStyle` function
 
-export default function App() {
+```ts
+import createStyle from 'react-native-silver';
+```
+
+```ts
+function App() {
   const { styles } = useStyles();
 
   return (
@@ -36,9 +38,6 @@ export default function App() {
 
 const useStyles = createStyle(({ isDark }) => ({
   container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
     backgroundColor: isDark ? '#000000' : '#ffffff',
   },
   text: {
@@ -46,6 +45,22 @@ const useStyles = createStyle(({ isDark }) => ({
   },
 }));
 ```
+
+Properties also available inside component while calling the styles hook
+
+```ts
+const { styles, width, ... } = useStyles();
+```
+
+### Properties
+
+| Property    | Type    | Description                                                                                                                                                         |
+| ----------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `isDark`    | boolean | Return the current color scheme of the application                                                                                                                  |
+| `width`     | number  | Return application window's width, it's value retrieved from [useWindowDimensions](https://reactnative.dev/docs/usewindowdimensions) hook                           |
+| `height`    | number  | Return application window's height, it's value retrieved from [useWindowDimensions](https://reactnative.dev/docs/usewindowdimensions) hook                          |
+| `fontScale` | number  | Return the scale of the font currently used, it's value retrieved from [useWindowDimensions](https://reactnative.dev/docs/usewindowdimensions) hook                 |
+| `scale`     | number  | Return the pixel ratio of the device your app is running on, it's value retrieved from [useWindowDimensions](https://reactnative.dev/docs/usewindowdimensions) hook |
 
 ## Contributing
 
