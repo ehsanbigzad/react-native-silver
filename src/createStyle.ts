@@ -22,6 +22,7 @@ export default function createStyle<
     // Create memoized style
     const memoizedStyle = useMemo(() => {
       return {
+        ...styleProps,
         styles: StyleSheet.create(getStyle(styleProps)),
       };
     }, [styleProps]);
