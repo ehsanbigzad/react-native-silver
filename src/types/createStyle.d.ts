@@ -4,7 +4,7 @@ export type StyleProps = {
   isDark: boolean;
 } & ScaledSize;
 
-export type UseStyle<T> = { styles: T };
+export type UseStyle<T> = { styles: T } & StyleProps;
 
 export type StyleObject<T> =
   | T
