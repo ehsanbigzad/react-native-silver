@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://nextjs.org">
+  <a href="#">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://iili.io/LNR46l.md.png">
       <img src="https://iili.io/LNR46l.md.png" height="128">
