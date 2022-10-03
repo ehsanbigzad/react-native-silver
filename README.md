@@ -69,7 +69,7 @@ const useStyles = createStyle(({ isDark }) => ({
 }));
 ```
 
-Properties also available inside component while calling the styles hook
+Also properties are available inside component while calling the styles hook
 
 ```ts
 const { styles, width, ... } = useStyles();
