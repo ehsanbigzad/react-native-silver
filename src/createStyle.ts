@@ -12,8 +12,8 @@ export default function createStyle<
 
   function useStyles(): UseStyle<T> {
     const scheme = useColorScheme();
-    const dimensions = useWindowDimensions();
     const { theme } = useSilverContext();
+    const dimensions = useWindowDimensions();
 
     // Prepare style props
     const styleProps = useMemo(() => {
