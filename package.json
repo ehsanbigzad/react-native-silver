@@ -1,6 +1,6 @@
 {
   "name": "react-native-silver",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Reactive styling (light & dark mode) for React Native applications 🎨📱",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
