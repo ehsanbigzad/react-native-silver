@@ -1,8 +1,10 @@
 import type { ScaledSize, StyleSheet } from 'react-native';
 
-export type StyleProps = {
+export type DefaultStyleProps = {
   isDark: boolean;
 } & ScaledSize;
+
+export interface StyleProps extends DefaultStyleProps {}
 
 export type UseStyle<T> = { styles: T } & StyleProps;
 

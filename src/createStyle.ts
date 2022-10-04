@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 import { StyleSheet, useColorScheme, useWindowDimensions } from 'react-native';
-import type { UseStyle, StyleObject } from './types/createStyle';
+
+import type { UseStyle, StyleObject } from './types';
 
 export default function createStyle<
   T extends StyleSheet.NamedStyles<T> | StyleSheet.NamedStyles<any>
