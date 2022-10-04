@@ -12,3 +12,16 @@ export type StyleObject<T> =
   | T
   | StyleSheet.NamedStyles<T>
   | ((props: StyleProps) => T | StyleSheet.NamedStyles<T>);
+
+export type BaseTheme = {
+  [key: string]: any;
+};
+
+export type SilverContextType = {
+  theme: BaseTheme | undefined;
+};
+
+export type SilverProviderProps = {
+  children: React.ReactNode;
+  theme?: BaseTheme;
+};
