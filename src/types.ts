@@ -17,11 +17,17 @@ export type BaseTheme = {
   [key: string]: any;
 };
 
+type ProviderConfig = {
+  isDark?: boolean | (() => boolean);
+};
+
 export type SilverContextType = {
-  theme: BaseTheme | undefined;
+  theme?: BaseTheme | null;
+  config?: ProviderConfig | null;
 };
 
 export type SilverProviderProps = {
   children: React.ReactNode;
   theme?: BaseTheme;
+  config?: ProviderConfig;
 };
