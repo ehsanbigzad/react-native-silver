@@ -129,7 +129,7 @@ export default function App(){
 }
 ```
 
-### Step 3 (Typescript only):
+### Step 3 (typescript only):
 Create type file `silver.d.ts` in your types folder and add below code
 ```ts
 import type {StyleProps} from 'react-native-silver'
