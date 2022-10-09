@@ -85,6 +85,93 @@ const { styles, width, ... } = useStyles();
 | `fontScale` | number  | Return the scale of the font currently used, it's value retrieved from [useWindowDimensions](https://reactnative.dev/docs/usewindowdimensions) hook                 |
 | `scale`     | number  | Return the pixel ratio of the device your app is running on, it's value retrieved from [useWindowDimensions](https://reactnative.dev/docs/usewindowdimensions) hook |
 
+## Theme
+It's possible to create a theme and provide manual props to `createStyle`.
+### Step 1:
+Create a theme in `theme.ts` file
+```ts
+import { createTheme } from 'react-native-silver';
+
+const theme = createTheme({
+  color: {
+    primary: '#69758a',
+    black: '#000000',
+    white: '#ffffff',
+  },
+  size: {
+    s: 7,
+    m: 12,
+    l: 18,
+    xl: 26,
+    xxl: 32,
+  },
+});
+
+export default theme;
+// In javascript project ignore below
+export type Theme = typeof theme;
+```
+
+### Step 2:
+Provide the created theme to the `SilverProvider` in `App.tsx`
+```tsx
+import React from 'react';
+import createStyle, { SilverProvider } from 'react-native-silver';
+
+import theme from './theme'
+
+export default function App(){
+  return (
+    <SilverProvider theme={theme}>
+      <Home />
+    </SilverProvider>
+  )
+}
+```
+
+### Step 3 (typescript only):
+Create type file `silver.d.ts` in your types folder and add below code
+```ts
+import type {StyleProps} from 'react-native-silver'
+
+import type {Theme} from './theme'
+
+declare module 'react-native-silver' {
+  interface StyleProps extends Theme {}
+}
+```
+
+### Using theme props:
+```ts
+const useStyles = createStyle(({color, size}) => ({
+  container: {
+    padding: size.xl,
+    backgroundColor: color.primary
+  }
+}))
+```
+
+## Configs
+It's possible to control `isDark` value manually.
+
+```tsx
+import React from 'react';
+import createStyle, { SilverProvider } from 'react-native-silver';
+
+export default function App(){
+  return (
+    <SilverProvider config={{isDark: false}}>
+      <Home />
+    </SilverProvider>
+  )
+}
+```
+
+`isDark` property also accepts a function
+```ts
+<SilverProvider config={{isDark: () => true}}>
+```
+
 ## Contributing
 
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
